@@ -11,8 +11,11 @@ use App\Http\Requests\UpdateActoresRequest;
 class ActoresController extends Controller
 {
     public function back(){
-        $regre = json_decode(Director::all(), true);
-        $most = json_decode(Actores::all(), true);
+        /*$regre = json_decode(Director::all(), true);
+        $most = json_decode(Actores::all(), true);*/
+        
+        $regre = Director::all();
+        $most = Actores::all();
 
         return view('Sticker.index', ['most' => $most, 'regre' => $regre]);
     }
