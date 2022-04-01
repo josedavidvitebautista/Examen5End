@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>View API</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="stellar/assets/css/main.css" />
@@ -10,7 +10,7 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-		<br><br><br>
+		<br>
 			<div id="wrapper">
 				<!-- Header -->
 					<!--<header id="header" class="alt">
@@ -21,15 +21,15 @@
 					</header>-->
 
 				<!-- Nav -->
-				
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Formulario :v</a></li>
-							<!--<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>-->
+
+                <!--<nav id="nav">
+                    <ul>
+                        <li><a href="#intro" class="active">Formulario :v</a></li>
+                        <li><a href="#first">First Section</a></li>
+                        <li><a href="#second">Second Section</a></li>
+                        <li><a href="#cta">Get Started</a></li>
 						</ul>
-					</nav>
+					</nav>-->
 
 				<!-- Main -->
 					<div id="main">
@@ -37,25 +37,24 @@
 						<!-- Introduction -->
 							<section id="intro" class="main">
 								<div class="spotlight">
-								<span></span>
 									<div class="content">
 										<center>
 										<h1>API Aburrida</h1>
-										<p>La funcion de esta API aburrida es darle un numero de 1 a 5 para que este nos devuelva una actividad que se pueda realizar entre n persona de forma aleatoria</p>
+										<h4>La funcion de esta API es darle un numero de 1 a 5 para que este nos devuelva una actividad que se pueda realizar entre n persona de forma aleatoria</h4>
 										</center>
-										<br>
-										<form method="POST" action="{{route('receptor')}}">
-											<center><p>Ingresa El Numero De Participantes: </p>
-											<input type="text" name="numero" id="numero" placeholder="Ingresa el numero de participantes">
-											<br>
-											<div class="alight-center">
-											<span></span>	
-											<button type="submit">Aceptar</button>
-											</center>
-											</div>
+										<form method="get" action="{{route('receptor')}}">
+											<center><p><b>Ingresa El Número De Participantes: </b></p>
+                                                <input min="1" max="5" type="number" name="numero" id="numero" required>
+                                                <br><br>
+                                                <div class="alight-center">
+                                                    <button type="submit">Aceptar</button>
+                                                </div>
+                                            </center>
 										</form>
 									</div>
-									<span></span>
+                                    <div class="content align-right">
+                                        <img src="https://acegif.com/wp-content/gif/anime-sleep-34.gif" height="300px" width="400px" onclick="Cuack()">
+                                    </div>
 								</div>
 							</section>
 
@@ -142,7 +141,7 @@
 							</section>-->
 
 					</div>
-					<br><br><br>
+					<br>
 
 				<!-- Footer -->
 					<!--<footer id="footer">
@@ -177,6 +176,7 @@
 			</div>
 
 		<!-- Scripts -->
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 			<script src="stellar/assets/js/jquery.min.js"></script>
 			<script src="stellar/assets/js/jquery.scrollex.min.js"></script>
 			<script src="stellar/assets/js/jquery.scrolly.min.js"></script>
@@ -184,5 +184,17 @@
 			<script src="stellar/assets/js/breakpoints.min.js"></script>
 			<script src="stellar/assets/js/util.js"></script>
 			<script src="stellar/assets/js/main.js"></script>
+            <script>
+                function Cuack(){
+                    Swal.fire({
+                        title: 'Cuack!',
+                        text: 'Encontraste Un Easter Egg ;v',
+                        imageUrl: 'https://c.tenor.com/iYt4PE4Rr9UAAAAC/anime.gif',
+                        imageWidth: 400,
+                        imageHeight: 300,
+                        imageAlt: 'Custom image',
+                    })
+                }
+            </script>
 	</body>
 </html>

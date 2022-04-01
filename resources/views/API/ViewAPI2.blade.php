@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Resultado</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="stellar/assets/css/main.css" />
@@ -9,18 +9,25 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<div class="content">
+                <header id="header" class="alt">
+                    <h1>Tu Actividad Es...</h1>
+                    <div class="content">
+                        @foreach($Dato as $item)
+                        <h4><b>Actividad: </b>{{$item['Actividad']}}</h4>
+                        <h4><b>Tipo: </b>{{$item['Tipo']}}</h4>
+                        <h4><b>Participantes: </b>{{$item['Participante']}}</h4>
+                        <h4><b>Precio: </b>{{$item['Precio']}}</h4>
+                        <h4><b>Enlace: </b>{{$item['Enlace']}}</h4>
+                        <h4><b>Accesibilidad:</b>{{$item['Accesibilidad']}}</h4>
+                        @endforeach
+                    </div>
+                    <br>
+                    <button><a href="{{route('firts_api')}}">¿De Nuevo?</a></button>
+                </header>
+            </div>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</header>
-
-				<!-- Nav -->
+				<!-- Nav
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
@@ -28,29 +35,28 @@
 							<li><a href="#second">Second Section</a></li>
 							<li><a href="#cta">Get Started</a></li>
 						</ul>
-					</nav>
+					</nav> -->
 
-				<!-- Main -->
-					<div id="main">
+				<!-- Main
+					<div id="main">-->
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
+							<!--<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
 											<h2>Ipsum sed adipiscing</h2>
 										</header>
-										<p>{{$numero}}</p>
 										<ul class="actions">
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 								</div>
-							</section>
+							</section>-->
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<!--<section id="first" class="main special">
 								<header class="major">
 									<h2>Magna veroeros</h2>
 								</header>
@@ -76,10 +82,10 @@
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
-							</section>
+							</section>-->
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+							<!--<section id="second" class="main special">
 								<header class="major">
 									<h2>Ipsum consequat</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
@@ -113,10 +119,10 @@
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
-							</section>
+							</section>-->
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<!--<section id="cta" class="main special">
 								<header class="major">
 									<h2>Congue imperdiet</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
@@ -130,10 +136,10 @@
 								</footer>
 							</section>
 
-					</div>
+					</div>-->
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!--<footer id="footer">
 						<section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
@@ -161,8 +167,7 @@
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
-
-			</div>
+			</div>-->
 
 		<!-- Scripts -->
 			<script src="stellar/assets/js/jquery.min.js"></script>

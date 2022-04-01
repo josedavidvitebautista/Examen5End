@@ -215,10 +215,10 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			background-color: #8A33C6;
+			background-image: url("https://fondosmil.com/fondo/23380.jpg"), url("https://fondosmil.com/fondo/23380.jpg");
 			background-repeat: repeat, repeat-x;
-			background-size: 128px 128px, cover;
+			background-size: 2000px 1200px, cover;
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -292,7 +292,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(255,255, 255, 0.75);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;

@@ -99,16 +99,19 @@
 
 								</div>
 								<div class="gallery">
-                                    <a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="https://moreliafilmfest.com/sites/default/files/legacy/2013/07/Kubrick.jpg" alt="" /></a>
-									<div class="group span-3">
-
-										<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/300px-Tom_Cruise_by_Gage_Skidmore_2.jpg" class="image filtered span-1-5" data-position="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_by_Gage_Skidmore_2.jpg/300px-Tom_Cruise_by_Gage_Skidmore_2.jpg" alt="" /><p>Tom Cruise </p></a>
-										<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://www.goldenglobes.com/sites/default/files/2021-12/nicole-kidman-nom-pro-gettyimages-1356865807.jpg?format=pjpg&auto=webp&optimize=high&width=850" alt="" /></a>
+                                    @foreach($regre as $value)
+                                    <a href="{{$value['Foto']}}" class="image filtered span-3" data-position="bottom"><img src="{{$value['Foto']}}" alt="" /></a>
+                                    @endforeach
+									<div class="group span-9-25">
+                                        @foreach($most as $item)
+                                            <a href="{{$item['Foto']}}" class="image filtered span-1-5" data-position="center"><img src="{{$item['Foto']}}" alt="" /></a>
+                                        @endforeach
+										<!--<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://www.goldenglobes.com/sites/default/files/2021-12/nicole-kidman-nom-pro-gettyimages-1356865807.jpg?format=pjpg&auto=webp&optimize=high&width=850" alt="" /></a>
                                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="https://images.mubicdn.net/images/cast_member/3622/cache-215604-1492043044/image-w856.jpg?size=800x" alt="" /></a>
-                                        <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Marie_Richardson.jpg/1200px-Marie_Richardson.jpg" alt="" /></a>
+                                        <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Marie_Richardson.jpg/1200px-Marie_Richardson.jpg" alt="" /></a>-->
 									</div>
-									<!--<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>-->
-									<div class="group span-4-5">
+
+									<!--<div class="group span-4-5">
                                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="https://cps-static.rovicorp.com/2/Open/Getty/Todd%20Field/_derived_jpg_q90_310x470_m0/73422286.jpg" alt="" /></a>
                                         <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/1642_Sky_du_Mont.JPG" alt="" /></a>
                                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="http://prolog.rs/upload/article/12928_Rade%20%C5%A0erbed%C5%BEija.jpg" alt="" /></a>
@@ -123,7 +126,7 @@
                                         <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://kmesh.io/img/biography/23/thomas-gibson-biography.jpg" alt="" /></a>
                                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="https://www.cine.com/media/actores/1/16206/16206_500.jpg" alt="" /></a>
                                         <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="https://vpa.syr.edu/wp-content/uploads/thorndike-stewart.jpg" alt="" /></a>
-                                    </div>
+                                    </div>-->
 									<!--<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>-->
 								</div>
 							</section>
@@ -172,7 +175,7 @@
 						<!-- Panel -->
 							<section class="panel color2-alt">
 								<div class="intro color2">
-									<h2 class="major">El Stiker :v</h2>
+									<h2 class="major">El Sticker :v</h2>
 									<img src="ethereal/Mine/IMG_20220323_184446.jpg" width="200px" height="400px">
 								</div>
 								<div class="intro color2">
@@ -180,10 +183,8 @@
 										<h3 class="major">Contacto</h3>
                                         <div class="span-1-30">
                                             <ul class="contact-icons color2">
-                                                <li class="icon brands fa-twitter"><a href="#">Twitter</a></li>
-                                                <li class="icon brands fa-facebook-f"><a href="#">Facebook</a></li>
-                                                <li class="icon brands fa-instagram"><a href="#">Instagram</a></li>
-                                                <li class="icon brands fa-github"><a href="#">GitHub</a></li>
+                                                <li class="icon brands fa-twitter"><a href="https://twitter.com/Zeiya24">Twitter</a></li>
+                                                <li class="icon brands fa-github"><a href="https://github.com/josedavidvitebautista/Examen5End.git">GitHub</a></li>
                                             </ul>
                                             <ul  class="contact-icons color2">
 
