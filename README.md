@@ -8,9 +8,9 @@
 <p>Grupo: <br><b>3522IS</b></p>
 <p>Carrera: <br><b>Ingeniera En Software</b></p>
 
-[Link Del Dominio] (https://exa5end.herokuapp.com)
+Link Del Dominio: https://exa5end.herokuapp.com
 
-[Link Del Video] (https://www.youtube.com/channel/UCeCTZjnJh_D0UDpe0Lfcizw)
+Link Del Video: https://www.youtube.com/channel/UCeCTZjnJh_D0UDpe0Lfcizw
 
 
 
