@@ -2,7 +2,7 @@
 
 <div class="align-center"><img src="https://acegif.com/wp-content/gif/anime-sleep-34.gif"></div>
 
-##Datos
+## Datos
 
 <p>Alumno: <br><b>José David Vite Bautista</b></p>
 <p>Grupo: <br><b>3522IS</b></p>
